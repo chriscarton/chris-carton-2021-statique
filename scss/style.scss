@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+$bg1: #05398b;
+$bg2: #6d2c6c;
+$text-color: #141414;
+
+@import "_breakpoints.scss";
+
+@font-face {
+  font-family: "Brown";
+  src: url("../fonts/Brown.woff2") format("woff2"),
+    url("../fonts/Brown.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Brown";
+  background: linear-gradient(to right, $bg1, $bg2);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  @include tablet {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.25);
+  }
+  background-color: white;
+  color: $text-color;
+  padding: 15px;
+  min-height: 60vh;
+}
+
+header {
+  @include tablet {
+    padding: 10px;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+  img {
+    max-width: 100px;
+  }
+  h1,
+  h2 {
+    margin: 0px;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  h2 {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+}
+
+h1.punchline {
+  font-size: 2rem;
+  @include tablet {
+    font-size: 3.5rem;
+  }
+  background: linear-gradient(to right, lighten($bg1, 30%), lighten($bg2, 30%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+article.content {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    display: block;
+    max-width: 606px;
+    width: 100%;
+    height: auto;
+  }
+  a {
+    font-weight: bold;
+    background: linear-gradient(
+      to right,
+      lighten($bg1, 30%),
+      lighten($bg2, 30%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "gsboilerplate",
+  "version": "1.0.0",
+  "description": "A simple boilerplate to compile scss into css and that's all. ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chriscarton/gulp-sass-boilerplate.git"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "simple",
+    "boilerplate"
+  ],
+  "author": "Chris Carton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chriscarton/gulp-sass-boilerplate/issues"
+  },
+  "homepage": "https://github.com/chriscarton/gulp-sass-boilerplate#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
