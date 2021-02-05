@@ -15,7 +15,7 @@ body {
   font-family: "Brown";
   background: linear-gradient(to right, #05398b, #6d2c6c);
   color: white;
-  min-height: 100vh;
+  min-height: 98vh;
   display: flex;
   align-items: center; }
 
@@ -29,12 +29,6 @@ body {
       width: 75%;
       margin-right: auto;
       margin-left: auto;
-      margin-top: 25px;
-      margin-bottom: 25px;
-      padding-left: 25px;
-      padding-right: 25px;
-      padding-top: 50px;
-      padding-bottom: 50px;
       border-top-right-radius: 25px;
       border-bottom-left-radius: 25px;
       box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.25); } }

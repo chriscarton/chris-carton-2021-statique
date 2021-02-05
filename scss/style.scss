@@ -21,7 +21,8 @@ body {
   font-family: "Brown";
   background: linear-gradient(to right, $bg1, $bg2);
   color: white;
-  min-height: 100vh;
+  min-height: 98vh;
+  //Et pas 100vh pour éviter une barre de défilement dégueulasse et qui ne sert à rien
   display: flex;
   align-items: center;
 }
@@ -31,12 +32,12 @@ body {
     width: 75%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    // margin-top: 25px;
+    // margin-bottom: 25px;
+    // padding-left: 25px;
+    // padding-right: 25px;
+    // padding-top: 25px;
+    // padding-bottom: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.25);
